@@ -1,5 +1,5 @@
-const {path} = require("path")
-const {fs} = require("fs")
+const path = require("path")
+const fs = require("fs")
 const std = require("./std_helpers")
 function createDir(dir) {
     if (!fs.existsSync(dir)) {
@@ -8,9 +8,12 @@ function createDir(dir) {
 }
 function testIsDir(pathStr) {
     let stats;
+
+    
     try {
         stats = fs.statSync(pathStr);
     } catch (error) {
+        console.warn(error);
         return false;
     }
     return stats.isDirectory();
