@@ -6,9 +6,9 @@
   "scripts": {
     "test": "node ./sort.js"
   },
-  "type": "module",
+
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "prettier":{
     "tabWidth": 4,
     "semi": true,
