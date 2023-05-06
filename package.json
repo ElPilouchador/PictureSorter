@@ -1,0 +1,20 @@
+{
+  "name": "test_photo_2",
+  "version": "0.0.1",
+  "description": "Picture Sorter",
+  "main": "sort.js",
+  "scripts": {
+    "test": "node ./sort.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "prettier":{
+    "tabWidth": 4,
+    "semi": true,
+    "printWidth": 150
+  },
+  "dependencies": {
+    "exif": "^0.6.0"
+  }
+}
