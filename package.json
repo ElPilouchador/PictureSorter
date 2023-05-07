@@ -4,6 +4,7 @@
   "description": "Picture Sorter",
   "main": "sort.js",
   "scripts": {
+    "start": "node ./sort.js",
     "test": "node ./sort.js"
   },
 
