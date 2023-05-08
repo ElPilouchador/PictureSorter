@@ -28,12 +28,12 @@ async function getFolder(questionText, errorText) {
         pathStr = await std.askUser(questionText);
         pathValid = testIsDir(pathStr);
         if (!pathValid) {
-            console.log(errorText);
+            console.warn(errorText);
         }
     }
     //if here the path seems to be correct
     //parsedPath = path.parse(pathStr);
-    return pathStr;
+    return path.parse(path.resolve(pathStr));
 }
 function recursiveFolderParser(dirPath, filesArray) {
     fs.readdirSync(dirPath).forEach((File) => {
